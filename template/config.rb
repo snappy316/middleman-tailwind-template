@@ -5,6 +5,15 @@ activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
 
+config[:js_dir] = 'javascripts'
+config[:css_dir] = 'stylesheets'
+
+activate :external_pipeline,
+         name: :webpack,
+         command: build? ? 'npm run build' : 'npm run start',
+         source: '.tmp/dist',
+         latency: 1
+
 # Layouts
 # https://middlemanapp.com/basics/layouts/
 
