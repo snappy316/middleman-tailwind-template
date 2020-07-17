@@ -1,8 +1,10 @@
 # Middleman Tailwind Template
 
-A [Middleman](https://middlemanapp.com) template that includes [Tailwind CSS](https://tailwindcss.com/) pre-installed and configured.
+A [Middleman](https://middlemanapp.com) template that includes [Tailwind CSS](https://tailwindcss.com/) and [Tailwind UI](https://tailwindui.com/) pre-installed and configured. Note that
 
-This template is based on the [Default Middleman Project Template](https://github.com/middleman/middleman-templates-default), so no additional plugins are installed by default.
+This template is based on the [Default Middleman Project Template](https://github.com/middleman/middleman-templates-default), and includes [`middleman-livereload`](https://github.com/middleman/middleman-livereload).
+
+Note that you must have a valid Tailwind UI License in order to have access to, and use, the Tailwind UI components. This template only includes the bare minimum configuration necessary in order to use the components.
 
 ## Usage
 ```
