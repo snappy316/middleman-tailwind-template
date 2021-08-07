@@ -7,27 +7,6 @@ module.exports = {
   },
   module: {
     rules: [
-      // {
-      //   test: /\.js$/,
-      //   exclude: /node_modules/,
-      //   use: {
-      //     loader: 'babel-loader',
-      //     options: {
-      //       presets: ['@babel/preset-env']
-      //     }
-      //   }
-      // },
-      // {
-      //   test: /\.js$/,
-      //   enforce: 'pre',
-      //   exclude: /node_modules/,
-      //   use: {
-      //     loader: 'eslint-loader',
-      //     options: {
-      //       configFile: '.eslintrc'
-      //     },
-      //   }
-      // },
       {
         test: /\.(sa|sc|c)ss$/,
         exclude: /node_modules/,
@@ -36,7 +15,6 @@ module.exports = {
             loader: MiniCssExtractPlugin.loader,
             options: {
               publicPath: __dirname + '/stylesheets/',
-              sourceMap: true
             }
           },
           {
@@ -49,9 +27,6 @@ module.exports = {
             loader: 'postcss-loader',
             options: {
               sourceMap: true,
-              config: {
-                path: __dirname + '/postcss.config.js'
-              }
             }
           },
           {
