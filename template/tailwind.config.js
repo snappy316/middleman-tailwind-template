@@ -1,6 +1,11 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
+  purge: [
+    './source/**/*.html.erb',
+    './source/**/*.html',
+    './source/**/*.erb',
+  ],
   darkMode: 'media',
   theme: {
     extend: {

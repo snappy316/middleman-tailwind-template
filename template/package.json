@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack --watch --progress --color --mode development",
-    "build": "webpack --bail --mode production"
+    "build": "NODE_ENV=production webpack --bail --mode production"
   },
   "author": "",
   "license": "ISC",
