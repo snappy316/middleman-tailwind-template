@@ -8,9 +8,9 @@ Note that you must have a valid Tailwind UI License in order to have access to, 
 
 ## Usage
 ```
-middleman init MY_PROJECT_FOLDER -T snappy316/middleman-tailwind-template
-cd MY_PROJECT_FOLDER
-yarn install
+$ middleman init MY_PROJECT_FOLDER -T snappy316/middleman-tailwind-template
+$ cd MY_PROJECT_FOLDER
+$ npm install
 ```
 
 Then boot up the Middleman server as normal: `middleman server`
